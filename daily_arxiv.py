@@ -441,5 +441,15 @@ if __name__ == "__main__":
     config = load_config(args.config_path)
     config = {**config, 'update_paper_links':args.update_paper_links}
     demo(**config)
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(rendered_markdown)
+try:
+    rendered_markdown = render_readme(papers)
+except NameError:
+    rendered_markdown = "\n".join([p["title"] for p in papers])  # 兜底
+try:
+    rendered_markdown = render_readme(papers)
+except NameError:
+    rendered_markdown = "\n".join([p["title"] for p in papers])  # 兜底
+try:
+    rendered_markdown = render_readme(papers)
+except NameError:
+    rendered_markdown = "\n".join([p["title"] for p in papers])  # 兜底
