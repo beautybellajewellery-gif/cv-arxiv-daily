@@ -441,3 +441,5 @@ if __name__ == "__main__":
     config = load_config(args.config_path)
     config = {**config, 'update_paper_links':args.update_paper_links}
     demo(**config)
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(rendered_markdown)
