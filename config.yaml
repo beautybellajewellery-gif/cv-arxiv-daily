@@ -22,10 +22,10 @@ md_wechat_path: './docs/wechat.md'
 
 # keywords to search
 keywords:
-  - "particle technology"
-  - "granular flow"
-  - "discrete element method"
-  - "DEM simulation"
-  - "particle packing"
-  - "fluidization"
+  particle technology: "particle technology"
+  granular flow: "granular flow"
+  discrete element method: "discrete element method"
+  DEM simulation: "DEM simulation"
+  particle packing: "particle packing"
+  fluidization: "fluidization"
 max_results: 20
