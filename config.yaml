@@ -22,8 +22,6 @@ md_wechat_path: './docs/wechat.md'
 
 # keywords to search
 keywords:
-    # config.yaml 示例
-keywords:
   - "particle technology"
   - "granular flow"
   - "discrete element method"
